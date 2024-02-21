@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a9f6d68fdc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR VENU</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Venu Ratcha</h1>
+            <p>✨ Full Stack Web Developer | HTML • CSS • Python • Bootstrap • JS • SQL • Node.js • React.js ✨</p>
+
+            <p class="aa">Hello, I'm Venu Ratcha, a Full Stack Web Developer with a passion for crafting engaging digital experiences. Proficient in HTML, CSS, Python, and a host of modern technologies, I specialize in building seamless and responsive web applications. Let's turn your digital vision into reality. Explore my portfolio and let's collaborate!</p>
+            </p>
+
+            <div class="social-media">
+                <a href="https://twitter.com/venuratcha"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/venu_1893/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="www.linkedin.com/in/ratchavenu"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/venu.ratcha.39"><i class='bx bxl-facebook'></i></a>
+            </div>
+
+
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video-recording'></i>
+                    <h3>Videographer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1690906511/1664594490126__1_-removebg-preview_souynf.png" class="imgg" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Venu Ratcha,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </h3>
+            <p>
+                This website is my personal blog where I write about web development
+                topics that interest me and inspire me.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better. I hope you
+                enjoyed reading my blog posts and
+                found
+                them useful and informative. If you want to know more about me, subscribe
+                to my social media account where i post
+                weekly
+                updates on web development trends and tips. If you have any feedback or
+                suggestions, please let me know. I'd love to hear from you.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>🌐 Responsive Design<br>
+                    💻 Full Stack Development<br>
+                    🚀 Modern Technologies<br>
+                    🎨 Custom UI/UX Design
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>🎨 Visual Branding<br>
+                    🖼️ Print & Digital Design<br>
+                    📸 Image Enhancement<br>
+                    💡 Custom Design Solutions<br></p>
+
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Video Editing</h3>
+                <p>🎬 Seamless Storytelling<br>
+                    🎥 Professional Enhancement<br>
+                    📹 Creative Montages<br>
+                    🎵 Synced Audio Integration<br>
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708115321/Screenshot_2024-02-17_015206_iugfgi.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Audio GPT</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="https://venuaudiogpt.ccbp.tech/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708115524/Screenshdfdot_2024-02-17_020121_tk2mau.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>GPT</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="https://venugpt.ccbp.tech/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708115617/aaScreenshot_2024-02-17_020240_no9jvg.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Wikipedia</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="https://venupedia.ccbp.tech/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708115749/Sbbbcreenshot_2024-02-17_020518_wfrsse.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Todo-List</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="https://venutodosite.ccbp.tech/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708115801/afadf_glmhqd.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Resturant</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="https://foodmunchayur.ccbp.tech/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdzmUhCaXNqb_ZT0pp2vKRxWwFF8i3PECAuV8MJ3yJkj1uqg4XbWuHt5YDgAI8xz_dX0&usqp=CAU" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708106535/images_ovfhpd.png" alt="">
+                        <h3>K.Srinu(sanathana Dharma group)</h3>
+                        <p>"Venu Satya's generosity in offering his video editing skills to our Sanadhana Dharma social group has been truly remarkable. Despite providing his services pro bono, the quality of his work exceeded our expectations. His dedication to enhancing our content, even at a basic level, showcases his commitment to our cause. We are immensely grateful for his contribution, and his positive impact on our online presence has not gone unnoticed. Venu Satya's editing talents and altruistic spirit have made him an invaluable member of our community."</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708106523/24138233_ovbvkf.jpg" alt="">
+                        <h3>International Hindu Education Institute</h3>
+                        <p>"Venu Satya's creative prowess played a pivotal role in bringing our vision to life. His expertly designed flyers have become the face of our organization, resonating with our values and mission. The thoughtful approach and attention to detail in his designs have greatly contributed to our outreach efforts. We extend our heartfelt gratitude to Venu Satya for his invaluable contribution to our international Hindu education institute."
+
+                        </p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="https://res.cloudinary.com/dpsqdaqbm/image/upload/v1708106535/images_ovfhpd.png" alt="">
+                        <h3>viewers</h3>
+                        <p>"Venu Satya's mastery in both photo and video editing is nothing short of impressive. His keen eye for detail and artistic flair brought a new dimension to our visual content. From transforming ordinary photos into captivating masterpieces to editing impactful videos, Venu Satya consistently delivered beyond expectations. His collaborative spirit and creative input were evident when he played a pivotal role in editing our college's short film. We are grateful for his skillful contributions, which undoubtedly elevated the overall quality and appeal of our creative projects."</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="hh heading">Contact <span>Me!</span></h2>
+
+        <div class="contact_me">
+            <div class=" each_contact_me tooltip-container">
+                <div class="tooltip">
+                    <div class="profile">
+                        <div class="user">
+                            <div class="img">Fb</div>
+                            <div class="details">
+                                <div class="name">Venu Ratcha</div>
+                                <div class="username">@venu_1893</div>
+                            </div>
+                        </div>
+                        <div class="about">95+ Friends</div>
+                    </div>
+                </div>
+                <div class="text">
+                    <a class="icon" href="https://www.facebook.com/venu.ratcha.39">
+                        <div class="flayer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="fnstagramSVG">
+                                <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                    <i class="fa-brands fa-facebook fa-2xl" style="color: #74C0FC;"></i>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="text">Facebook</div>
+                    </a>
+                </div>
+            </div>
+            <div class=" each_contact_me tooltip-container">
+                <div class="tooltip">
+                    <div class="profile">
+                        <div class="user">
+                            <div class="img">Ui</div>
+                            <div class="details">
+                                <div class="name">Venu Ratcha</div>
+                                <div class="username">@venu_1893</div>
+                            </div>
+                        </div>
+                        <div class="about">200+ Followers</div>
+                    </div>
+                </div>
+                <div class="text">
+                    <a class="icon" href="https://www.instagram.com/venu_1893/">
+                        <div class="layer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="instagramSVG">
+                                <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                    <i class="fa-brands font_icons fa-instagram fa-xl"></i> </svg>
+                            </span>
+                        </div>
+                        <div class="text">Instagram</div>
+                    </a>
+                </div>
+            </div>
+            <div class=" each_contact_me tooltip-container">
+                <div class="tooltip">
+                    <div class="profile">
+                        <div class="user">
+                            <div class="img">Ui</div>
+                            <div class="linkedin_details">
+                                <div class="name">Venu Ratcha</div>
+                                <div class="username">@venu_ratcha</div>
+                            </div>
+                        </div>
+                        <div class="about">1500+ connections</div>
+                    </div>
+                </div>
+                <div class="text">
+                    <a class="icon" href="www.linkedin.com/in/ratchavenu/">
+                        <div class="llayer">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="lnstagramSVG">
+                                <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                    <i class="fa-brands fa-linkedin fa-lg"></i></i> </svg>
+                            </span>
+                        </div>
+                        <div class="text">linkedin</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <center>
+                <p>Copyright &copy; 2024 by | All Rights Reserved By Venu</p>
+            </center>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+        <canvas id="canvasbg"></canvas>
+        <canvas id="canvas"></canvas>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <!-- partial -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+<script src="./script.js"></script>
+
+</body>
+
+</html>
